@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
+:root{
+    --dark-blue: hsl(240, 38%, 20%);
+    --grayish-blue: hsl(240, 18%, 77%);
+
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    color: black;
+}
+
+article{
+    width: 90rem;
+    height: 50rem;
+    font-size: 2rem;
+    position: relative;
+    margin: auto;
+}
+.btn{
+    width: 7rem;
+    height: 3.5rem;
+    border-radius: 1.75rem;
+    background: #fff;
+    position: absolute;
+    left: 49.75rem;
+    bottom: 8rem;
+    box-shadow: 0 2px 10rem 1rem rgba(0, 0, 0, .2);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.btn a{
+    text-decoration: none;
+    color: #000;
+}
+.btn a img{
+    width: 1rem;;
+}
+section.testimonial{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 30rem 45rem;
+    padding: 2.5rem 5rem 5.5rem 10rem;
+    position: absolute;
+    background: url(./images/pattern-curve.svg) no-repeat left bottom;
+    transition: all .4s ease;
+}
+section.testimonial.show{
+    display: grid;
+}
+section.testimonial.hide{
+    display: none;
+}
+section .testimonial__content{
+    width: 100%;
+    align-self: center;
+    justify-self: center;
+    padding: 4rem 0;
+    background: url(./images/pattern-quotes.svg) no-repeat 20% top;
+}
+.testimonial__text{
+    font-weight: 300;
+    width: 40rem;
+    position: relative;
+    z-index: 100;
+    margin-bottom: 3.5rem;
+    line-height: 1.25;
+}
+
+.user{
+    display: flex;
+}
+.user__name{
+    font-size: 1rem;
+    font-weight: 700;
+    margin-right: 1rem;
+}
+.user__role{
+    font-size: 1rem;
+    color: var(--grayish-blue);
+}
+.testimonial__image{
+    width: 100%;
+    height: 100%;
+    background: url('./images/pattern-bg.svg') no-repeat top left/100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.testimonial__image img{
+    display: block;
+    width: 33.75rem;
+    height: 33.75rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+@media screen and (max-width: 1200px){
+    article{
+      background: blue;
+    }
+    section{
+  
+    }
+}
+@media screen and (max-width: 1000px){
+    article{
+      background: rgb(211, 30, 18);
+    }
+    section{
+  
+    }
+}
+@media screen and (max-width: 350){
+    article{
+      background: rgb(13, 207, 87);
+    }
+    section{
+  
+    }
+}
